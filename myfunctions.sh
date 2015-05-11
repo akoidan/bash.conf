@@ -4,7 +4,8 @@
 # echos id of the current tab
 #use $(getId)
 function getId() {
- echo -n "$(qdbus org.kde.yakuake /yakuake/sessions sessionIdList | tr , "\n" | sort -g | tail -1 | tr -d '\n')"
+ # qdbus org.kde.yakuake - prints all methods 
+ qdbus org.kde.yakuake /yakuake/sessions activeSessionId
 }
 
 #sets current tab tittle name

@@ -60,6 +60,7 @@ txtrst='\e[0m'    # Text Reset
 PS1="\[\033[1;34m\]:\[\033[00m\] "
 #PS1="$bldblu:$txtrst "
 
+alias minicom="sudo minicom"
 alias ls="ls --color=auto"
 alias mykill="mykill"
 alias dir="dir --color=auto"
@@ -73,16 +74,19 @@ alias pacu="sudo pacman -Syu --noconfirm"
 alias pacr="sudo pacman -Rs"
 alias pac="sudo yaourt -Sy --noconfirm"
 alias djangochat="redis-server & node --debug /home/andrew/djangochat/node_modules/ishout.js/server.js"
+alias cdd="changeDirectory /home/andrew/python/djangochat chat"
 alias start="sudo systemctl start"
 alias stop="sudo systemctl stop"
 alias tabTittle="tabTittle"
 alias pct="echo -ne"
-alias minicom="sudo minicom"
-export EDITOR="vim"
+alias svnu="svn log -l 100 | sed -n '/akoidan/,/-----$/ p'"
+alias fuck='sudo $(history -p \!\!)'
 export SSHROUT="root@193.105.201.235 -p 23"
-export LS_COLORS='di=0;35:fi=0;32:ex=0;93:tw=40;35:ow=40;35:st=40;35'
+export LS_COLORS='di=0;35:fi=0;32:ex=0;93:tw=40;35:ow=40;35:st=40;35:ln=36:or=91'
 export HISTFILESIZE="9999999"
-export JETTY_HOME="/usr/share/jetty"
+export JETTY_HOME="/usr/share/jetty/"
+export KARAF_DEBUG="true"
+export JPDA_SUSPEND="y"
 set -o vi
 
 #print colored text
@@ -122,14 +126,15 @@ PS2="> "
 PS3="> "
 PS4="+ "
 
+# Open vim as sudo if user can't write a file
 sudovim() {
 	# if user can write a file and it's not root
 	if [ -w $1 -o $EUID == 0 ]; then
 		vim "$@"
-	else 
+	else
 		read -p "Open file as root [Y/n]" -n 1 -r
 		echo $REPLY
-		if [[ $REPLY =~ ^[Nn]$ ]]; then 
+		if [[ $REPLY =~ ^[Nn]$ ]]; then
 			vim "$@"
 		else
 			sudo vim "$@"
