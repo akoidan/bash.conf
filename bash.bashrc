@@ -129,6 +129,11 @@ PS4="+ "
 # Open vim as sudo if user can't write a file
 sudovim() {
 	# if user can write a file and it's not root
+	if [ ! -f $1 ]; then
+		echo "File not found!"
+		return
+	fi
+	
 	if [ -w $1 -o $EUID == 0 ]; then
 		vim "$@"
 	else
