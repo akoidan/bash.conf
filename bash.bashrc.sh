@@ -128,20 +128,30 @@ PS4="+ "
 
 # Open vim as sudo if user can't write a file
 sudovim() {
-	# if user can write a file and it's not root
-	if [ -w $1 -o $EUID == 0 ]; then
-		vim "$@"
-	else
-		read -p "Open file as root [Y/n]" -n 1 -r
-		echo $REPLY
-		if [[ $REPLY =~ ^[Nn]$ ]]; then
+	# if file doesn't exists
+	if [ ! -f $1 ]; then
+		#if it's a directory
+		if [ -d $1 ]; then
 			vim "$@"
+		#file doesn't exists and it's not a dir so create a new file
 		else
-			sudo vim "$@"
-    		fi
+			dirname="$(dirname ${1})"
+			# if directory if writable
+			if [ -w $dirname -o $EUID == 0 ]; then
+				vim "$@"
+			#if directory is not writable
+			else 
+				sudo vim "$@" 
+			fi
+		fi
+	# if file exists and current user is not a root
+	elif [ -w $1 -o $EUID == 0 ]; then
+		vim "$@"
+	# if file exists and its not writable by current user
+	else 
+		sudo vim "$@"
 	fi
 }
 alias vim=sudovim
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
-
