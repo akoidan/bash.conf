@@ -153,5 +153,9 @@ sudovim() {
 	fi
 }
 alias vim=sudovim
+grepfile() {
+ find ${PWD} -type f -name "$1" -print0 |xargs -0 grep --color -i "$2"
+}
+
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
