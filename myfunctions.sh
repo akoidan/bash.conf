@@ -25,7 +25,7 @@ function changeDirectory() {
 #kills all processes that contains 
 #use mykill stringInProcess
 mykill () {
- kill -9 $(ps ax|grep $1 | awk '{print $1}')
+ kill -9 $(ps ax|grep -i $1 | awk '{print $1}')
 }
 
 #prints colored help
