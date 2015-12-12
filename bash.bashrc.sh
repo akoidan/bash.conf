@@ -81,7 +81,8 @@ alias stop="sudo systemctl stop"
 alias tabTittle="tabTittle"
 alias pct="echo -ne"
 alias svnu="svn log -l 100 | sed -n '/akoidan/,/-----$/ p'"
-alias fuck='sudo $(history -p \!\!)'
+alias fuck='command="$(history -p \!\!)"; echo "Enter password for \"sudo ${command}\":"; sudo ${command}'
+alias poweroff="systemctl poweroff -i"
 export SSHROUT="root@193.105.201.235 -p 23"
 export LS_COLORS='di=0;35:fi=0;32:ex=0;93:tw=40;35:ow=40;35:st=40;35:ln=36:or=91'
 export HISTFILESIZE="9999999"
