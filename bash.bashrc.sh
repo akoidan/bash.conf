@@ -155,6 +155,16 @@ sudovim() {
 	fi
 }
 alias vim=sudovim
+sshgen() {
+  if [ -z "$1" ]; then
+    echo "Generates rsa key on server, usage:"
+    echo "sshgen andrew@192.168.1.100"
+  else
+    cat .ssh/id_rsa.pub | ssh $1 "cat >> .ssh/authorized_keys"
+  fi
+}
+alias sshgen=sshgen
+
 grepfile() {
  find ${PWD} -type f -name "$1" -print0 |xargs -0 grep --color -i "$2"
 }
