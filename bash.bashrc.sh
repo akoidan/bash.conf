@@ -165,7 +165,7 @@ sshgen() {
       mkdir -p ~/.ssh
       ssh-keygen -t rsa
     fi
-    cat .ssh/id_rsa.pub | ssh $1 "cat >> .ssh/authorized_keys"
+    cat .ssh/id_rsa.pub | ssh $1 $2 "cat >> .ssh/authorized_keys"
   fi
 }
 alias sshgen=sshgen
