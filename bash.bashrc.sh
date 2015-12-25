@@ -160,6 +160,11 @@ sshgen() {
     echo "Generates rsa key on server, usage:"
     echo "sshgen andrew@192.168.1.100"
   else
+    if [ ! -f ~/.ssh/id_rsa.pub ]; then
+      echo "Generating rsa"
+      mkdir -p ~/.ssh
+      ssh-keygen -t rsa
+    fi
     cat .ssh/id_rsa.pub | ssh $1 "cat >> .ssh/authorized_keys"
   fi
 }
