@@ -170,6 +170,27 @@ sshgen() {
   fi
 }
 
+mklinkp() {
+  if [[ ! -z "$1" ]]; then
+    echo "Moves file to ext4 part and creates link from current"
+    echo "Usage: mklink fileIncurrentDir"
+    return 0;
+  fi
+  targetdir="/run/media/andrew/ext4$PWD"
+  if [ -d "$targetdir/$1" ] || [ -f "$targetdir/$1" ]; then
+    echo "file exists $targetdir/$1"
+    return 1;
+  fi
+  if [ ! -d "$1" ] && [ ! -f "$1" ]; then
+    echo "file doesn't exists $targetdir/$1"
+    return 2;
+  fi
+  mkdir -pv "$targetdir"
+  mv -v "$1" "$targetdir"
+  ln -sv "$targetdir/$1" "$PWD"
+}
+alias mklink="mklinkp"
+
 alias sshgen=sshgen
 
 grepfile() {
