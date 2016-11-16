@@ -1,0 +1,7 @@
+set hlsearch 
+set tabstop=2 
+set noexpandtab 
+set autoindent 
+syntax on
+
+set paste
