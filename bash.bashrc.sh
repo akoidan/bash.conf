@@ -119,6 +119,13 @@ function prompt_command() {
 	echo "$exit_code"
 }
 
+mv_android() {
+ find . -depth -name '* *' -execdir bash -c 'mv -vi "$1" "${1// /_}"' _ {} \;
+ find . -depth -name '*@*' -execdir bash -c 'mv -vi "$1" "${1//@/}"' _ {} \;
+ find . -regextype sed -regex ".*[0-9]x\..*" -execdir bash -c 'mv -vi "$1" "${1//[0-9]x/}"' _ {} \;
+}
+
+
 # The " || _z -- add" part is a hack to keep z from modifying $PROMPT_COMMAND,
 # and will never actually be executed.
 export PROMPT_COMMAND="prompt_command || _z --add"
