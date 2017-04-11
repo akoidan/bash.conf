@@ -1,0 +1,43 @@
+--- a/third_party/WebKit/Source/devtools/front_end/sources/module.json
++++ b/third_party/WebKit/Source/devtools/front_end/sources/module.json
+@@ -43,11 +43,11 @@
+             "bindings": [
+                 {
+                     "platform": "windows,linux",
+-                    "shortcut": "F8 Ctrl+\\"
++                    "shortcut": "F9 Ctrl+\\"
+                 },
+                 {
+                     "platform": "mac",
+-                    "shortcut": "F8 Meta+\\"
++                    "shortcut": "F9 Meta+\\"
+                 }
+             ]
+         },
+@@ -63,7 +63,7 @@
+             "bindings": [
+                 {
+                     "platform": "windows,linux",
+-                    "shortcut": "F10 Ctrl+'"
++                    "shortcut": "F8 Ctrl+'"
+                 },
+                 {
+                     "platform": "mac",
+@@ -83,7 +83,7 @@
+             "bindings": [
+                 {
+                     "platform": "windows,linux",
+-                    "shortcut": "F11 Ctrl+;"
++                    "shortcut": "F7 Ctrl+;"
+                 },
+                 {
+                     "platform": "mac",
+@@ -103,7 +103,7 @@
+             "bindings": [
+                 {
+                     "platform": "windows,linux",
+-                    "shortcut": "Shift+F11 Shift+Ctrl+;"
++                    "shortcut": "Shift+F8 Shift+Ctrl+;"
+                 },
+                 {
+                     "platform": "mac",
