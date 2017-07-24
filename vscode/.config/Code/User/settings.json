@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "onWindowChange",
+    "files.exclude": {
+         ".vscode": true,
+         ".idea/": true
+    },
+    "workbench.colorTheme": "Visual Studio Light",
+    "window.zoomLevel": 1
+}
