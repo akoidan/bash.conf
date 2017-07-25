@@ -1,0 +1,1 @@
+gcc -Wall -lX11 main.c -o gif.bin
