@@ -5,8 +5,10 @@
     "files.autoSave": "onWindowChange",
     "files.exclude": {
          ".vscode": true,
-         ".idea/": true
+         ".idea/": true,
+         "**/*.pyc": true,
+         "**/__pycache__": true
     },
     "workbench.colorTheme": "Visual Studio Light",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 0
 }
