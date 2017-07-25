@@ -19,7 +19,7 @@ int getDelay () {
   char path[1035];
 
   /* Open the command for reading. */
-  fp = popen("zenity --entry --title \"Recoding duration\" --text \"Please enter the screencast duration in seconds:\" --width 200 --height 100", "r");
+  fp = popen("zenity --entry --title \"ScreenRecorder\" --text \"To create screencast.gif in /home/andrew/Pictures enter the gif duration in seconds:\" --width 200 --height 100", "r");
   if (fp == NULL) {
     printf("Failed to run command\n" );
     exit(1);
@@ -110,6 +110,9 @@ void beep() {
 }
 int main() {
     int dur = getDelay();
+    if (dur == 0) {
+        return;
+    }
     struct client_params a = get_coord();
     char *command = (char*)malloc(1000 * sizeof(char));
     sprintf(
