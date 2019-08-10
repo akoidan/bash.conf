@@ -7,6 +7,18 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 setfont cyr-sun16
 [[ $- != *i* ]] && return
 
+
+nvm () {
+  if hash nvm 2>/dev/null; then
+   source /usr/share/nvm/init-nvm.sh
+   export NVM_DIR="$HOME/.nvm"                           
+   export NVM_SOURCE="/usr/share/nvm"                     # The AUR package installs it to here.
+   [ -s "$NVM_SOURCE/nvm.sh" ] && . "$NVM_SOURCE/nvm.sh"  # Load NVM
+  fi
+  nvm "$@"
+}
+
+
 shopt -s checkwinsize
 
 shopt -s histappend
