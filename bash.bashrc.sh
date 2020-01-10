@@ -2,8 +2,8 @@
 # /etc/bash.bashrc
 #
 
-source /usr/bin/myfunctions.sh
-source /usr/share/doc/pkgfile/command-not-found.bash
+#source /usr/bin/myfunctions.sh
+#source /usr/share/doc/pkgfile/command-not-found.bash
 setfont cyr-sun16
 [[ $- != *i* ]] && return
 
