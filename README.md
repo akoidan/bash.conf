@@ -30,4 +30,6 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - oh yeah if you hold your macbook on your belly sharp edges just scratch your body
  - I have a 5k $ machine and it has like 480x640 camera, what the hell? Well at least speakers and micrphone are good (there're laptops with the same quality)
  - usb flash feature from macbook (when you restart your mac in a disk mode) just doesn't work with my other laptop. I can't mount freaking apple device, how the fuck can you screw a mount storage (I mean if a 1$ usb flash drive can be mounted by every machine, why 5'000$ laptop can't)
- 
+ - I install iterm2, seems to be better than yakuake, can't find a featuer to open in at the same screen when it was opened b4, but I like the fact that it doesn't crash
+ - ok, apple wifi hospot SUCKS. I created one and wasn't able to connect to it, neither from my Xiami mi9 niether from my another laptop. Both device can see it and both are unable to connect. 
+ - when I connect to peer too peer patchcord DNS stops working on mac. So i can't google anymore (at least google.com is cached)
