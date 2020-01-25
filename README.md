@@ -34,3 +34,6 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - ok, apple wifi hospot SUCKS. I created one and wasn't able to connect to it, neither from my Xiami mi9 niether from my another laptop. Both device can see it and both are unable to connect. 
  - when I connect to peer too peer patchcord DNS stops working on mac. So i can't google anymore (at least google.com is cached)
  -keyboard shortcut sucks, I wanted to run an app by a shorcut, intutial thing is to visit system preference and search for shortcuts, no apple allow to add a laucnh app from there, but it doesn't work. It turns out it's another feature. You need to know that there's an app call automator, in this thing you need to create a service and give it a unique name, then just match that name in keyboard shortcust (who there said that apple is so fucking userfriendly)
+####  day 2 summary 
+I still think mac is better than linux, at least everything works out of the box. I love that bluetooth earphones work along with integrated microphone, linux just don't support input from aptx via bluetooth.
+
