@@ -40,9 +40,9 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  -wow scheduled boot is a really cool thing (it probably exists on linux too, but I doubt has a program can schedule a boot, should be some kind of bios alarm) but even that way i won't spend time on that on Linux, have other things to do.
   - ok I trying to copy all my files from msi to mac, took me 2 hour to setup vsftpd\pure-ftpd and I failed, all ftp on appstore cost money (really, this is ftp, not a gold formula). Who said that apple is so easy to use?
  - ok t2 chip seems to be shit, COpying files with 1Gbit lan started with 120MB|s, and when the memory just fill up, it dropped down to 20MB\s. Who said that write speed on t2 is amazing? Probably gonna remove encryption on my laptop.
- - scp on mac had a bug, I tried to copy my laptop reqursivly and end up that 200gb directory become 1.2TB and copying never ended. I checked the disk usage, the issue was with wine folder, it had link to home folder which had this wine folder. SO it would ate up all my space.
  - brew sucks comparing to pacman/apt-get (no pkgfile or apt-file).
  - installing app has no visual progress, it's not clear when app finishes installing or whether it's already installed
  - bluetooth audieo fails some time, outputting either to right or left speaker, connecting to them as to a difference devies. I haven't had that issue on linux.
  - auto turn on after opening a lid is great feature
+ - https://apple.stackexchange.com/questions/380732/non-official-usb-c-dock-station-detects-2-external-monitors-are-a-single-one
  
