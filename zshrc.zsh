@@ -1,6 +1,3 @@
-HISTFILE=/Users/deathagel908/.zsh_history
-HISTSIZE=20000
-SAVEHIST=10000
 
 # My bash
 
@@ -37,9 +34,11 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
-#set -o vi
-#PS1=$'\e[0;34m$ \e[0m'
 PS1='%F{blue}:%f '
+PS2="> "
+PS3="> "
+PS4="+ "
+
 precmd() {
   local exit_code=$?
 
@@ -62,22 +61,24 @@ precmd() {
   fi
 	echo "$exit_code"
 }
-PS2="> "
-PS3="> "
-PS4="+ "
-export EDITOR=vim
-export PAGER=open
 
 
-alias fuck='command="$(history -p \!\!)"; echo "Enter password for \"sudo ${command}\":"; sudo ${command}'
-# HSTR configuration - add this to ~/.zshrc
-alias hh=hstr                    # hh to be alias for hstr
-setopt histignorespace           # skip cmds w/ leading space from history
-export HSTR_CONFIG=hicolor       # get more colors
+HISTFILE=/Users/deathangel908/.zhistory
+HISTSIZE=10000
+SAVEHIST=10000
+disable log
+setopt appendhistory
+setopt INC_APPEND_HISTORY 
 
+set -o vi
 
+bindkey "\C-a" beginning-of-line
 bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="/usr/local/opt/openvpn/sbin:$PATH"
 export LDFLAGS="-L/usr/local/opt/icu4c/lib"
 export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+export EDITOR=vim
+export HSTR_CONFIG=hicolor       # get more colors
+export PAGER=open
