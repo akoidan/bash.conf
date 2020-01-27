@@ -35,7 +35,7 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - when I connect to peer too peer patchcord DNS stops working on mac. So i can't google anymore (at least google.com is cached)
  -keyboard shortcut sucks, I wanted to run an app by a shorcut, intutial thing is to visit system preference and search for shortcuts, no apple allow to add a laucnh app from there, but it doesn't work. It turns out it's another feature. You need to know that there's an app call automator, in this thing you need to create a service and give it a unique name, then just match that name in keyboard shortcust (who there said that apple is so fucking userfriendly)
  - I still think mac is better than linux, at least everything works out of the box. I love that bluetooth earphones work along with integrated microphone, linux just don't support input from aptx via bluetooth.
- - touchbar is really an awesome thing, I'm not sure why people keep coplaining about it,the surface feels really great, despite it's not a physical button, for those who need f1-f12 all the time, it can be done via settings, I'm ok with the things it shows above the keyboard, If i had to chose between touchbard mac and non-touchbar I would definitely stick to touchbar model
+ - touchbar is really an awesome thing. I was so against it, since a developer needs f5-f9 to debug things. Now i'm not sure why people keep coplaining about it,the surface feels really great, despite it's not a physical button, for those who need f1-f12 all the time, it can be done via settings, I'm ok with the things it shows above the keyboard, If i had to chose between touchbard mac and non-touchbar I would definitely stick to touchbar model
  - dark theme integration is better than any DE (kde|gnome|Lxde|mate)
  -wow scheduled boot is a really cool thing (it probably exists on linux too, but I doubt has a program can schedule a boot, should be some kind of bios alarm) but even that way i won't spend time on that on Linux, have other things to do.
   - ok I trying to copy all my files from msi to mac, took me 2 hour to setup vsftpd\pure-ftpd and I failed, all ftp on appstore cost money (really, this is ftp, not a gold formula). Who said that apple is so easy to use?
@@ -45,4 +45,8 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - bluetooth audieo fails some time, outputting either to right or left speaker, connecting to them as to a difference devies. I haven't had that issue on linux.
  - auto turn on after opening a lid is great feature
  - https://apple.stackexchange.com/questions/380732/non-official-usb-c-dock-station-detects-2-external-monitors-are-a-single-one
+ - usb-c power supply is a cool thing, I bought 
+ - I didn't want to buy mac because it has limited amount of interfaces (only 4 thunderbolts) but after using an adapter which I connect all the things (external mouse/keyboard/ethernet/audio/display port/power supply) it's much easier to get home an inject only a single cable, rather than 10 cables.
+ - fingerprint scanner fails a lot, my even my 400$ Xiaomi m9 has a better one (including a fact that's it's above the screen)
+ 
  
