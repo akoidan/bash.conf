@@ -49,5 +49,6 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - I didn't want to buy mac because it has limited amount of interfaces (only 4 thunderbolts) but after using an adapter which I connect all the things (external mouse/keyboard/ethernet/audio/display port/power supply) it's much easier to get home an inject only a single cable, rather than 10 cables.
  - fingerprint scanner fails a lot, my even my 400$ Xiaomi m9 has a better one (including a fact that's it's above the screen)
  - Apple ecosystem is freaking expensive and very poor. E.g. they don't have any adapter that supports 2 displays simultaneously. 
+ - It turns out that macOS doesn't support [MST](https://medium.com/@sebvance/everything-you-need-to-know-about-macbook-pros-and-their-lack-of-displayport-mst-multi-stream-98ce33d64af4) so thus it 
  
  
