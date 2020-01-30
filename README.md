@@ -39,7 +39,16 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - dark theme integration is better than any DE (kde|gnome|Lxde|mate)
  -wow scheduled boot is a really cool thing (it probably exists on linux too, but I doubt has a program can schedule a boot, should be some kind of bios alarm) but even that way i won't spend time on that on Linux, have other things to do.
   - ok I trying to copy all my files from msi to mac, took me 2 hour to setup vsftpd\pure-ftpd and I failed, all ftp on appstore cost money (really, this is ftp, not a gold formula). Who said that apple is so easy to use?
- - ok t2 chip seems to be shit, COpying files with 1Gbit lan started with 120MB|s, and when the memory just fill up, it dropped down to 20MB\s. Who said that write speed on t2 is amazing? Probably gonna remove encryption on my laptop.
+ - t2 chip aleviates cpue
+ - fingerprint reader not really doing much, hven't use applepay yet
+ - touchbar is really nice
+ - speakers are really awesome,
+ - mic is good as well.
+ - camera is trash
+ - machine is really quiet
+ - i9 
+ - bettery is good
+ 
  - brew sucks comparing to pacman/apt-get (no pkgfile or apt-file).
  - installing app has no visual progress, it's not clear when app finishes installing or whether it's already installed
  - bluetooth audieo fails some time, outputting either to right or left speaker, connecting to them as to a difference devies. I haven't had that issue on linux.
@@ -51,5 +60,6 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - fingerprint scanner fails a lot, my even my 400$ Xiaomi m9 has a better one (including a fact that's it's above the screen)
  - Apple ecosystem is freaking expensive and very poor. E.g. they don't have any adapter that supports 2 displays simultaneously. 
  - It turns out that macOS doesn't support [MST](https://medium.com/@sebvance/everything-you-need-to-know-about-macbook-pros-and-their-lack-of-displayport-mst-multi-stream-98ce33d64af4) so thus it 
+ - some apps like time machine make life easy. You can also do the same in linux or windows, but did you do any anything if it doesn't come out of the box? I mean I don't spent time configuring automated backups, creating udev rules, making dd, checking if cp doesn't break files on live system,checking what happens on full disk size, restoring backups and etc, I can just trust apple that it works out of the box.
  
  
