@@ -23,7 +23,7 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   ##### Apple hardware help
   The guy seems to understand some basic of hardware just told me that apple only supports thing that are being sold only on apple site. For everything else - go fuck yourself. So if I buy a USB mouse and mac support usb, it doesn't guarantee that it would work. Ok w/e sounds reasanoble. Hail apple. FOr those people who says everything works on mac. Come on mac has very limited number of things, it will never deliver support for those. Kernel modules should be singed in order to load them. THings like thunderbolt adapters will never come with drivers, since they don't have permissions to load them into the kernel. And you know what apple says: we don't support that. That's the fact for all of the thing you can buy from non apple site that stays that "It supports macbook" https://www.azdomes.com/product/usb-c-docking-station/
   
-  ##### Day 2: 
+### Hands on experience 
  - huge touchpad is a good thing right? I wonder how people use apple watch together with that macbook thing. My miband just scratches the chassis all the time, on my msi touchpad was smaller so my wrist always was right near the chassis
  - Ok, I installed google chrome, I have core i9, 2tb ssd, 64RAM. Guess what happens when I try to maximize chrome window? Animation is freaking lagging. I have cpu at iddle, no other apps open and animation happens like 2-3 FPS. Freaking embarassing, 2 top 10 companies can make a soft that works together - facepalm
  - ok I downloaded slack, and it turns out that it doesn't have an icon tray, so now I have no way to inspect my slack notifictations. I've hidden the "dock" panel ( and if I didn't slack displays a red circle even if a notification was made from muted channel) . I've tried to install the https://getbitbar.com/ took me 20-30 mins to understand how to switch to python3 by default, install a package to python2 since macos permission system denies you access to system lib even if you're root. So you can't just do `ln -sf $(which python3) $(which pyhon)`. Oh you knw why everything doesn't crash? They just don't bump libs, new macos uses python2.7 which is no longer supported.
@@ -46,6 +46,7 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - auto turn on after opening a lid is great feature
  - https://apple.stackexchange.com/questions/380732/non-official-usb-c-dock-station-detects-2-external-monitors-are-a-single-one
  - usb-c power supply is a cool thing, I bought 
+ - touchbar is really nice, better than fn keys. Adaptation like having debug buttons open while debugging in Pycharm is really cool, Well you can't place fingertips on it like I did with function keys, but maybe the thing is need to get used to.
  - I didn't want to buy mac because it has limited amount of interfaces (only 4 thunderbolts) but after using an adapter which I connect all the things (external mouse/keyboard/ethernet/audio/display port/power supply) it's much easier to get home an inject only a single cable, rather than 10 cables.
  - fingerprint scanner fails a lot, my even my 400$ Xiaomi m9 has a better one (including a fact that's it's above the screen)
  - Apple ecosystem is freaking expensive and very poor. E.g. they don't have any adapter that supports 2 displays simultaneously. 
