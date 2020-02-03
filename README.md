@@ -66,4 +66,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - default screenshoter with ability to record video for specific window or area is a nice thing
   - wtf is default commands: flags don't work, `git version 2.21.1 (Apple Git-122.3)` `find` `ls` and everything else sucks
   - language switcher is nice, hold ctrl to and press press while keep holding would turn `2 of N`, `ctrl+ space` will switch between those 2. I have ukr, russ, eng and I can switch withing single press
+  - ok macos cryptoplugin from privatbank works out of the box, I spent 4 hours for settings it up on Linux, cause chromium had a different folder
  
