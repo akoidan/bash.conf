@@ -65,4 +65,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - glossy displays accumulates things like a hell. I never touched it my hands, but after 3 weeks of using I spout some dirty fingerprint of something like this (could be my gf, or others). So I tried what would anyone tried to do: get the special things that are made for such cases and use them. 
   - default screenshoter with ability to record video for specific window or area is a nice thing
   - wtf is default commands: flags don't work, `git version 2.21.1 (Apple Git-122.3)` `find` `ls` and everything else sucks
+  - language switcher is nice, hold ctrl to and press press while keep holding would turn `2 of N`, `ctrl+ space` will switch between those 2. I have ukr, russ, eng and I can switch withing single press
  
