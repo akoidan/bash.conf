@@ -67,4 +67,6 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - wtf is default commands: flags don't work, `git version 2.21.1 (Apple Git-122.3)` `find` `ls` and everything else sucks
   - language switcher is nice, hold ctrl to and press press while keep holding would turn `2 of N`, `ctrl+ space` will switch between those 2. I have ukr, russ, eng and I can switch withing single press
   - ok macos cryptoplugin from privatbank works out of the box, I spent 4 hours for settings it up on Linux, cause chromium had a different folder
+  - screen holds fingerprints like a hell, it's impossible to wipe them out.
+  - check the image in the github repo of how black looks on each display: left=middle price va; right=cheap ips; middle - macbook
  
