@@ -69,4 +69,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - ok macos cryptoplugin from privatbank works out of the box, I spent 4 hours for settings it up on Linux, cause chromium had a different folder
   - screen holds fingerprints like a hell, it's impossible to wipe them out.
   - check the image in the github repo of how black looks on each display: left=middle price va; right=cheap ips; middle - macbook
+  - defult display settings app sucks, I can not configure external monitor to 144GZ, too few settings, no custom resolution, no refresh rates, by default mac doesn't set max settings in display. Googling and installing google `brew cscreen` doesnt pick the new refresh rates as well. Hopefull free appstore app `Display Menu` detected monitor capabilities and I set 144Ghz. 
  
