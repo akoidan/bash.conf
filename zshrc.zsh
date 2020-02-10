@@ -67,8 +67,7 @@ HISTFILE=/Users/deathangel908/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
 disable log
-setopt appendhistory
-setopt INC_APPEND_HISTORY 
+setopt incappendhistory
 
 set -o vi
 
@@ -77,8 +76,17 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 export PATH="/usr/local/opt/openvpn/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+export LC_ALL=en_US.UTF-8
 export CPPFLAGS="-I/usr/local/opt/icu4c/include"
 export EDITOR=vim
 export HSTR_CONFIG=hicolor       # get more colors
-export PAGER=open
+export PATH="/usr/local/opt/krb5/bin:$PATH"
+export PATH="/usr/local/opt/krb5/sbin:$PATH"
+export LDFLAGS="-L/usr/local/opt/krb5/lib"
+export CPPFLAGS="-I/usr/local/opt/krb5/include"
+export NVM_DIR="$HOME/.nvm"
+
+alias mc="PAGER=open /usr/local/bin/mc"
+source ~/.zshrc.local
