@@ -71,4 +71,7 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - check the image in the github repo of how black looks on each display: left=middle price va; right=cheap ips; middle - macbook. Black colors are awesome, and colors are much better than my external displays one. Unfortunately 60Ghz sucks so much after I got used to 144Ghz.
   - defult display settings app sucks, I can not configure external monitor to 144GZ, too few settings, no custom resolution, no refresh rates, by default mac doesn't set max settings in display. Googling and installing google `brew cscreen` doesnt pick the new refresh rates as well. Hopefull free appstore app `Display Menu` detected monitor capabilities and I set 144Ghz. 
   - Ok, mac crashed fo the first time, screen became colored with a static weird image, touchbard didn't show anything and nothing happened during pressing the keyboard. This happened after ejecting an external docstation that has power thought it.
+  - sleep doesn't work with external dock, it wakes up in 15 seconds
+  - wifi doesn't connect after resuming from sleep (it shows that it tries to connect to my network, by manual restarting only helps)
+  
  
