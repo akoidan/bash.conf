@@ -73,5 +73,6 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - Ok, mac crashed fo the first time, screen became colored with a static weird image, touchbard didn't show anything and nothing happened during pressing the keyboard. This happened after ejecting an external docstation that has power thought it.
   - sleep doesn't work with external dock, it wakes up in 15 seconds
   - wifi doesn't connect after resuming from sleep (it shows that it tries to connect to my network, by manual restarting only helps)
+  - touchbard doesnt work after sleep https://apple.stackexchange.com/questions/378022/touch-bar-not-turning-on-after-waking-computer-from-sleep 
   
  
