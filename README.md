@@ -74,5 +74,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - sleep doesn't work with external dock, it wakes up in 15 seconds
   - wifi doesn't connect after resuming from sleep (it shows that it tries to connect to my network, by manual restarting only helps)
   - touchbard doesnt work after sleep https://apple.stackexchange.com/questions/378022/touch-bar-not-turning-on-after-waking-computer-from-sleep 
-  
+  - macbook displays after display off( sleep, or just turnining off only display) set superwarm temperature, despite night mode is off, external display has exactly the same issue. Going to display settings and switching a few times between display profiles seem to help. 
  
