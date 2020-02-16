@@ -77,3 +77,4 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - macbook displays after display off( sleep, or just turnining off only display) set superwarm temperature, despite night mode is off, external display has exactly the same issue. Going to display settings and switching a few times between display profiles seem to help. 
  - macbook resets refresh rate on external screen after reconnect (plug out plug in/macbook reboot)
  - if macbook wakes up from sleep, with external display connected via USB, it just doesn't wake up at all, the screen is black. Also if you plug out the screen, after plugging it it constatly switchiing on off display (like onces per 5 seconds)
+ -macbook has high resoltion 3kx2k? that's great, because you will probably use lower than full had, because mac doesn't have scaling like windows does. Higher resolution only supports something like antialiasing with a lower one. 
