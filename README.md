@@ -78,3 +78,6 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  - macbook resets refresh rate on external screen after reconnect (plug out plug in/macbook reboot)
  - if macbook wakes up from sleep, with external display connected via USB, it just doesn't wake up at all, the screen is black. Also if you plug out the screen, after plugging it it constatly switchiing on off display (like onces per 5 seconds)
  -macbook has high resoltion 3kx2k? that's great, because you will probably use lower than full had, because mac doesn't have scaling like windows does. Higher resolution only supports something like antialiasing with a lower one. 
+ - google calendar is awesome for macos, it has ability to create and accept events (comparing to Linux's things) and it also shows the notification on above other windows when the event is starting right b4 the event
+  - macos save display preferences and if you connect the same set of displays again you won't need to rearrange that (it's so irritative on KDE, gnome, unity, xfce and other DE are even worse)
+
