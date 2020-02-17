@@ -89,4 +89,21 @@ export CPPFLAGS="-I/usr/local/opt/krb5/include"
 export NVM_DIR="$HOME/.nvm"
 
 alias mc="PAGER=open /usr/local/bin/mc"
+
+reset_idea() {
+
+  reset_idea_ide ()  {
+     echo "Removing $1 $2"
+     prefs_dir=/Users/deathangel908/Library/Preferences
+     ide_dir=$prefs_dir/$1
+     rm -rfv $ide_dir/eval
+     sed -i '' '/evlsprt/d' $ide_dir/options/other.xml;
+     rm -v $prefs_dir/jetbrains.$2.*.plist
+  }
+
+  reset_idea_ide Pycharm2019.3 pycharm
+  reset_idea_ide WebStorm2019.3 webstorm
+  reset_idea_ide DataGrip2019.3 datagrip
+  unset -f reset_idea_ide
+}
 source ~/.zshrc.local
