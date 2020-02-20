@@ -80,4 +80,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
  -macbook has high resoltion 3kx2k? that's great, because you will probably use lower than full had, because mac doesn't have scaling like windows does. Higher resolution only supports something like antialiasing with a lower one. 
  - google calendar is awesome for macos, it has ability to create and accept events (comparing to Linux's things) and it also shows the notification on above other windows when the event is starting right b4 the event
   - macos save display preferences and if you connect the same set of displays again you won't need to rearrange that (it's so irritative on KDE, gnome, unity, xfce and other DE are even worse)
+  - Macbook supports 5 displays (1 internal and 4 externals in extended mode), I'm not aware of other laptop that can do it (Well, at least w/o external thunderbolt videocard)
 
