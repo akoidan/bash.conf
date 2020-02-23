@@ -82,4 +82,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - macos save display preferences and if you connect the same set of displays again you won't need to rearrange that (it's so irritative on KDE, gnome, unity, xfce and other DE are even worse)
   - Macbook supports 5 displays (1 internal and 4 externals in extended mode), I'm not aware of other laptop that can do it (Well, at least w/o external thunderbolt videocard
   - macbook display is too colorful and bright, I thought it's a good thing, but after working full day on this monitor my eyes got really tired. I didn't have this on non-glossy "ordinary" screen. Got ipad to my dad, he claims the same, can't sit with his ipad for too long.
+  - when multiple screen, display arrangement doesn't allow move mouse in cirtan area, thinking that it's no available no this monitor (like left section, or right section)
 
