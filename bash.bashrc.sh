@@ -185,7 +185,7 @@ sshgen() {
                         mkdir -p ~/.ssh
                         ssh-keygen -t rsa
                 fi
-                cat ~/.ssh/id_rsa.pub | ssh $1 "cat > /tmp/r2d2_auth_keys && mkdir -p ~/.ssh && cat /tmp/r2d2_auth_keys >> ~/.ssh/authorized_keys"
+                cat ~/.ssh/id_rsa.pub | ssh $@ "cat > /tmp/r2d2_auth_keys && mkdir -p ~/.ssh && cat /tmp/r2d2_auth_keys >> ~/.ssh/authorized_keys"
         fi
 }
 
