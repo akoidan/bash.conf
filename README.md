@@ -85,4 +85,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - when multiple screen, display arrangement doesn't allow move mouse in cirtan area, thinking that it's no available no this monitor (like left section, or right section)
   - after going to sleep , displays just don't connect, some times you need to physically eject the cable and plug it in again. Sometime even after doing it like 10 times doesn't help. You need to power off the mac, and power it on again in order to detect the external screen. Evrything else just doesn't work, I tried to unplug the doc station, to power off the dock station to remove all cables from dock station , to attach another external monitor to dock station, to unplug the monitor from dock station, to unplug the dock station from the mac. Lets face the truth, mac is good on everything that comes with mac, anything that's not made by MAC (keyboard, mouse, external display, even if it's via USB mac just FUCK you with.)
   - sometimes locks by itself (while I'm working)
+  - after sleep macbook sets brightness for external display to 100%
 
