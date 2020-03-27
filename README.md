@@ -91,4 +91,4 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - smb works on macos even better than on windows, it automatically detects shared folder w/o even typing the IP
   - macos doesn't support aptx-hd, ldac audio codecs,iphones even don't support aptx
   - port 443 is available on mac w/o root
-
+  - ssh copy text in terminal doesn't work
