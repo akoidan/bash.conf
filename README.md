@@ -92,3 +92,4 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - macos doesn't support aptx-hd, ldac audio codecs,iphones even don't support aptx
   - port 443 is available on mac w/o root
   - ssh copy text in terminal doesn't work
+  - etc/host doesn't apply automatically, you may need to restart apps, like chrome
