@@ -96,3 +96,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - if macbook on low battery it won't turn on even plugged in to a charger. Wait like 3-5minutes to take some charge. This is fo freakling inconvenient when you forgot to plug it in and then when you urgently need it it won't turn on
   - SMC (system management controller or w/e its abbreviated from) is a freaking pain in the macbook ecosystem. Your external display doesn't connect sometime - reset SMC, macbook doesn't wakeup from sleep - reset SMC, your pancakes always burned ? - reset SMC.
   - My macbook doesn't start one time. It was always showing an icon that I need to connect a charger, despite a charger ( I tested it with my phone) worked ok. Guess what - resetting SMC changes. I don't expect that of a 5'000$ machine that worth 2 times more than same hardware non-apple system
+  -  macbook doesn't have MSpaint. 
+  - some keyboards don't work on apple ? Wooot? you've heard it right, my mechanical keyboard doesn't support Mac. Some keys are not detected, you just press them and nothing happens. Some are binded to another keycode. Embarrassing... 
