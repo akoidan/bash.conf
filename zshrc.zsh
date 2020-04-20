@@ -119,5 +119,5 @@ sshgen() {
                 cat ~/.ssh/id_rsa.pub | ssh $@ "cat > /tmp/r2d2_auth_keys && mkdir -p ~/.ssh && cat /tmp/r2d2_auth_keys >> ~/.ssh/authorized_keys"
         fi
 }
-
+source /usr/local/opt/nvm/nvm.sh
 source /Users/deathangel908/.zshrc.local
