@@ -100,4 +100,4 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   -  macbook doesn't have MSpaint. 
   - some keyboards don't work on apple ? Wooot? you've heard it right, my mechanical keyboard doesn't support Mac. Some keys are not detected, you just press them and nothing happens. Some are binded to another keycode. Embarrassing... 
   - finder doesn't display new files some times.
-  - kernel_task eats uses all cores when IDLE, so even mouse freezes. Reboot helps. During that CPU temp is 60c.
+  - kernel_task eats uses all cores when IDLE, so even mouse freezes. Reboot helps. During that CPU temp is 60c. ![activity monitor](image.png)
