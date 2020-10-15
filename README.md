@@ -104,4 +104,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - audio configuration (midi programm) has built in option to create output to multiple devices (e.g. to multiple BT headphones) which is super convenient  
   - despite native programs "never hang" you would eventually use 3rd party programs. E.g. Virtualbox. Using virtualbox on non-linux is a pain in the ass. Guest machines hang a lot of time. BUilding kernel modules are pain in the ass
   - OBS is unable to capture desktop audio w/o Ishow audio which could cause mouse freezing. 
+  - alt tab to window in OSX doesn't activate them. If they were hidden they will stay hidden
  
