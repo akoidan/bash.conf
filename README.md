@@ -102,3 +102,6 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - finder doesn't display new files some times.
   - kernel_task eats uses all cores when IDLE, so even mouse freezes. Reboot helps. During that CPU temp is 60c. ![activity monitor](image.png)
   - audio configuration (midi programm) has built in option to create output to multiple devices (e.g. to multiple BT headphones) which is super convenient  
+  - despite native programs "never hang" you would eventually use 3rd party programs. E.g. Virtualbox. Using virtualbox on non-linux is a pain in the ass. Guest machines hang a lot of time. BUilding kernel modules are pain in the ass
+  - OBS is unable to capture desktop audio w/o Ishow audio which could cause mouse freezing. 
+ 
