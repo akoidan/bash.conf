@@ -119,5 +119,14 @@ sshgen() {
                 cat ~/.ssh/id_rsa.pub | ssh $@ "cat > /tmp/r2d2_auth_keys && mkdir -p ~/.ssh && cat /tmp/r2d2_auth_keys >> ~/.ssh/authorized_keys"
         fi
 }
-source /usr/local/opt/nvm/nvm.sh
+
+source_it() {
+  while read -r line; do
+    if [[ -n "$line" ]] && [[ $line != \#* ]]; then
+      export "$line"
+    fi
+  done < $1
+}
+
+alias nvm='activate_nvm() { unalias nvm; unset -f activate_nvm; source /usr/local/opt/nvm/nvm.sh; nvm "$@" ; }; activate_nvm'
 source /Users/deathangel908/.zshrc.local
