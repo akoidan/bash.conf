@@ -1,0 +1,5 @@
+- `yay -S droidcam`
+- `pacman -S linux-headers v4l2loobpack android-tools`
+- `modprobe v4l2loobpack`
+-from the same user as droicam `pacmd load-module module-alsa-source device=hw:Loopback,1,0`
+- clone https://github.com/aramg/droidcam/tree/master/linux run install-sound if sound doesn't work in step above. comment out in script if something is missing
