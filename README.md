@@ -106,4 +106,5 @@ ok I've been a linux user for almost 10 years. All of that time I said that mac 
   - OBS is unable to capture desktop audio w/o Ishow audio which could cause mouse freezing. 
   - alt tab to window in OSX doesn't activate them. If they were hidden they will stay hidden
   - after 7 month of using mac started crashing every hour, i reseted nvram, rebooted with shift, ran mac builting test (when booting holding D, which shown that hardware is ok), after all of builting methods I flashed memtestx86 info usb flash drive and it shown that RAM has thousand of errors. RIP. The whole motherboard goes under replacement (with ssd, videocard, cpu, ram, t2 chip and other stuff in it) I can't work on my machine for the next month or so, untll it gets fixed.
+  - wifi is really stable
  
