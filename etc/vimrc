@@ -5,3 +5,4 @@ set autoindent
 syntax on
 
 set paste
+set mouse=r
