@@ -1,0 +1,8 @@
+
+# packages
+pacman -S bluez bluezdevil bluez-libs bluez-utils pulseaudio-alsa pulseaudio-bluetooth
+'pacman -U --noconfirm --config /etc/pacman.conf -- /home/andrew/.cache/yay/bluez-hcitool/bluez-hcitool-5.63-1-x86_64.pkg.tar.zst
+# troubleshoot
+sudo journalctl -u bluetooth
+dmesg
+pactl list 
