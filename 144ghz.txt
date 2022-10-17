@@ -3,3 +3,5 @@ cvt 3440 1440 144
 xrandr --newmode "3440x1440_144.00"  1086.75  3440 3744 4128 4816  1440 1443 1453 1568 -hsync +vsync
 xrandr --addmode DisplayPort-3 3440x1440_144.00
 xrandr --output DisplayPort-3 --mode 3440x1440_144.00
+# to save current configuration use autorandr 
+arandr
