@@ -19,9 +19,14 @@ async function readDirRecursive(dirPath: string): Promise<void> {
             if (entry.name.toLowerCase().endsWith('bash')) {
                 continue;
             }
+            if (!entry.name.endsWith('.mkv') && !entry.name.endsWith('.ass') && !entry.name.endsWith('.mka')) {
+                console.error(`Unkown file ${entry.name}`);
+            }
             let regExpMatchArray = entry.name.match(/\d\d/);
             if (!regExpMatchArray) {
-                throw new Error(`${entry.name} is not a file`);
+                console.error(`file ${entry.name} doesn't have epoisode #`);
+                continue
+                // throw new Error(`${entry.name} is not a file`);
             }
             const episode = parseInt(regExpMatchArray![0], 10);
             if (!structure[episode]) {
@@ -31,8 +36,8 @@ async function readDirRecursive(dirPath: string): Promise<void> {
                     video: null,
                 };
             }
-            if (!episode) {
-                throw new Error(`Cannot read directory ${fullPath}`);
+            if (episode === undefined) {
+                throw new Error(`Cannot read file ${fullPath}`);
             }
             if (entry.name.endsWith('mkv')) {
                 structure[episode].video = fullPath;
@@ -48,9 +53,13 @@ async function readDirRecursive(dirPath: string): Promise<void> {
 }
 
 async function main() {
-    const rootDIr = "/home/andrew/ntfs/movies/Wajutsushi [WEB-DL CR 1080p AVC AAC]/";
+    const rootDIr = "/home/andrew/ntfs/movies/No Game No Life TV/";
     await readDirRecursive( path.resolve(rootDIr));
     for (const [key, value] of Object.entries(structure)) {
+        if (!value.video) {
+            continue
+            throw Error(`Cannot find main file for epise ${key}`);
+        }
         let openFile = `mpv "${value.video}"`;
         for (const audio of value.audio) {
             openFile += ` --audio-file="${audio}"`
@@ -61,8 +70,8 @@ async function main() {
         if (fontDir) {
             openFile += ` --sub-fonts-dir="${fontDir}"`
         }
-        const bashScriptPath = path.join(rootDIr, `${key}.bash`);
-        await fs.writeFile(path.join(rootDIr, `${key}.bash`), openFile, 'utf8');
+        const bashScriptPath = path.join(rootDIr, `${String(key).padStart(2, '0')}.bash`);
+        await fs.writeFile(bashScriptPath, openFile, 'utf8');
         await fs.chmod(bashScriptPath, 0o755);
     }
 }
