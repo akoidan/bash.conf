@@ -15,7 +15,7 @@ async function readDirRecursive(dirPath: string): Promise<void> {
   for (const entry of entries) {
     const fullPath = path.join(dirPath, entry.name);
     if (entry.isDirectory()) {
-      if (entry.name.toLowerCase().includes('font')) {
+      if (entry.name.toLowerCase().includes('font') || entry.name.toLowerCase().includes('шрифты')) {
         fontDir = fullPath;
       } else {
         await readDirRecursive(fullPath);
@@ -24,8 +24,9 @@ async function readDirRecursive(dirPath: string): Promise<void> {
       if (entry.name.toLowerCase().endsWith(scriptExt)) {
         continue;
       }
-      if (!entry.name.endsWith('.mkv') && !entry.name.endsWith('.ass') && !entry.name.endsWith('.mka')) {
+      if (!entry.name.endsWith('.mkv') && !entry.name.endsWith('.ass') && !entry.name.endsWith('.mka') && !entry.name.endsWith('.ttf')) {
         console.error(`Unkown file ${entry.name}`);
+        continue
       }
       let regExpMatchArray = entry.name.match(/\d\d/);
       if (!regExpMatchArray) {
@@ -80,6 +81,6 @@ async function main(rootDIr: string) {
   }
 }
 
-main('D:\\movies\\Tengoku Daimakyou').catch(err => {
+main('D:\\movies\\Summer.Time.Rendering.BDRemux.1080p').catch(err => {
   console.error('Failed to write directory structure:', err);
 });
