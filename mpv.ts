@@ -28,13 +28,21 @@ async function readDirRecursive(dirPath: string): Promise<void> {
         console.error(`Unkown file ${entry.name}`);
         continue
       }
-      let regExpMatchArray = entry.name.match(/\d\d/);
+      let episode = 0;
+      let regExpMatchArray = entry.name.match(/E(\d\d)/);
       if (!regExpMatchArray) {
-        console.error(`file ${entry.name} doesn't have epoisode #`);
-        continue
-        // throw new Error(`${entry.name} is not a file`);
+        episode = parseInt(regExpMatchArray![1], 10);
+      } else {
+        entry.name.match(/\d\d/);
+        if (!regExpMatchArray) {
+          console.error(`file ${entry.name} doesn't have epoisode #`);
+          continue
+          // throw new Error(`${entry.name} is not a file`);
+        }
+        episode = parseInt(regExpMatchArray![1], 10);
       }
-      const episode = parseInt(regExpMatchArray![0], 10);
+
+
       if (!structure[episode]) {
         structure[episode] = {
           audio: [],
@@ -81,6 +89,6 @@ async function main(rootDIr: string) {
   }
 }
 
-main('D:\\movies\\Summer.Time.Rendering.BDRemux.1080p').catch(err => {
+main('D:\\movies\\ReZero S02P02 1080p Dual Audio BD Remux FLAC-TTGA').catch(err => {
   console.error('Failed to write directory structure:', err);
 });
