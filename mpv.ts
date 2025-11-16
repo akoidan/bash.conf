@@ -8,6 +8,7 @@ const structure: Record<number, { audio: string[], video: string|null, subtitles
 let fontDir: string|null= null
 
 const scriptExt = platform() == 'win32' ? 'cmd' : 'bash';
+const programName = platform() == 'win32' ? 'mvp.exe' : 'mpv';
 
 async function readDirRecursive(dirPath: string): Promise<void> {
   const entries = await fs.readdir(dirPath, {withFileTypes: true});
@@ -21,7 +22,7 @@ async function readDirRecursive(dirPath: string): Promise<void> {
         await readDirRecursive(fullPath);
       }
     } else {
-      if (entry.name.toLowerCase().endsWith(scriptExt)) {
+      if (entry.name.toLowerCase().endsWith('.cmd') || entry.name.toLowerCase().endsWith('.bash')) {
         continue;
       }
       if (!entry.name.endsWith('.mkv') && !entry.name.endsWith('.ass') && !entry.name.endsWith('.mka') && !entry.name.endsWith('.ttf')) {
@@ -30,16 +31,16 @@ async function readDirRecursive(dirPath: string): Promise<void> {
       }
       let episode = 0;
       let regExpMatchArray = entry.name.match(/E(\d\d)/);
-      if (!regExpMatchArray) {
+      if (regExpMatchArray) {
         episode = parseInt(regExpMatchArray![1], 10);
       } else {
-        entry.name.match(/\d\d/);
+        regExpMatchArray = entry.name.match(/\d\d/);
         if (!regExpMatchArray) {
           console.error(`file ${entry.name} doesn't have epoisode #`);
           continue
           // throw new Error(`${entry.name} is not a file`);
         }
-        episode = parseInt(regExpMatchArray![1], 10);
+        episode = parseInt(regExpMatchArray![0], 10);
       }
 
 
@@ -73,7 +74,7 @@ async function main(rootDIr: string) {
       continue
       throw Error(`Cannot find main file for epise ${key}`);
     }
-    let openFile = `mpv.exe "${value.video}"`;
+    let openFile = `${programName} "${value.video}"`;
     for (const audio of value.audio) {
       openFile += ` --audio-file="${audio}"`
     }
@@ -89,6 +90,6 @@ async function main(rootDIr: string) {
   }
 }
 
-main('D:\\movies\\ReZero S02P02 1080p Dual Audio BD Remux FLAC-TTGA').catch(err => {
+main('/home/andrew/ntfs/movies/Goblin Slayer II/').catch(err => {
   console.error('Failed to write directory structure:', err);
 });
