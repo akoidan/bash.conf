@@ -1,4 +1,6 @@
 
+// DEPRECATED
+// USE https://github.com/akoidan/media-launcher
 import {promises as fs} from 'fs';
 import * as path from 'path';
 import {platform} from 'os';
