@@ -1,7 +1,7 @@
 #
-# /etc/bash.bashrc
+# DEPRECATED ###################
+# USE ZSHRC.zsh
 #
-
 #source /usr/bin/myfunctions.sh
 #source /usr/share/doc/pkgfile/command-not-found.bash
 setfont cyr-sun16
